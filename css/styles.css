@@ -67,32 +67,33 @@ a {
     text-decoration: none;
 }
 
-a:hover{
-  color: white;
+a:hover {
+    color: white;
 }
 
 ul {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 li {
-  display: inline;
-  padding: 5px 30px;
+    display: inline;
+    padding: 5px 30px;
 }
+
 /************************************** NAVBAR ****************************************/
 .nav-content {
-  float: right;
+    float: right;
 }
 
 .logo {
-  float: left;
+    float: left;
 }
 
 /************************************ MAIN CONTAINER **************************************/
 .main-container {
-  width: 100%;
-  display: grid;
-  grid-template-rows: repeat(7, minmax(300px, auto));
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(7, minmax(300px, auto));
 }
 
 /************************************** CONTAINERS ****************************************/
@@ -115,11 +116,9 @@ li {
 }
 
 .about-me {
-    background-color: var(--mid-tone);
-}
-
-.contact-me {
     background-color: var(--main-bg);
+    width: 70%;
+    margin: auto;
 }
 
 .footer {
@@ -127,7 +126,7 @@ li {
 }
 
 /**************************************CLASS SELECTORS****************************************/
-/* BANNER */
+/********************************* BANNER *************************************/
 .top-container {
     /* min-height: 450px; */
     display: grid;
@@ -137,19 +136,18 @@ li {
 }
 
 .profile-image {
-  height: 400px;
-  width: auto;
+    height: 400px;
+    width: auto;
 }
 
 /* .banner-content {
 
 } */
-
 .my-name {
     color: var(--mid-tone);
 }
 
-/* THOUGHTS */
+/******************************** THOUGHTS ************************************/
 .thought-box {
     background-color: #E5E5E5;
     margin: auto;
@@ -174,9 +172,9 @@ li {
     font-size: 1.2vw;
 }
 
-/* WORK */
+/********************************* WORK *************************************/
 .work-row {
-  clear: both;
+    clear: both;
     width: 70%;
     margin: 50px auto;
     text-align: left;
@@ -196,24 +194,41 @@ li {
     margin-left: 30px;
 }
 
-/* SKILLS */
-
+/********************************* SKILLS *************************************/
 .skill-content {
-  display: grid;
-  grid-template-columns: repeat(6, 150px);
-  grid-gap: 15px;
-  justify-content: center;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-gap: 15px;
+    justify-content: center;
+    justify-items: center;
 }
 
-.skill-box {
-  padding: 5px 10px;
-}
+/* .skill-box {
 
-/* .skill-box table {
-  padding: 5px 10px;
 } */
-
 .skills p, .skills h3 {
-  color: var(--main-bg);
+    color: var(--main-bg);
+}
+
+/******************************** ABOUT ME ************************************/
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+.btn button {
+    padding: 30px;
+    margin: 40px;
+    color: var(--dark-accent);
+    background-color: var(--light-tone);
+}
+
+/******************************** FOOTER ************************************/
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 50px ;
 }
